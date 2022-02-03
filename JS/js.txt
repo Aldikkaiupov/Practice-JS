@@ -1,0 +1,30 @@
+<script>
+const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+let myName = "Aldiyar Kyzyrkhanov";
+let myGroup = "CS-2113S";
+const y = new Date();
+const d = new Date();
+let day = days[d.getDay()];
+let month = "February";
+const h = new Date();
+const m = new Date();
+const s = new Date();
+document.getElementById("demo").innerHTML = myName;
+document.getElementById("1").innerHTML = myGroup;
+document.getElementById("2").innerHTML = y.getFullYear();
+document.getElementById("3").innerHTML = day;
+document.getElementById("4").innerHTML = month;
+document.getElementById("5").innerHTML = h.getHours()+":"+m.getMinutes()+":"+s.getSeconds();
+</script>
+<script>
+function text1() {
+  var x = document.getElementById("myInput1").value;
+  var y = document.getElementById("myInput2").value;
+  document.getElementById("result1").innerHTML = x * y;
+}
+function text2() {
+  var x = document.getElementById("myInput1").value;
+  var y = document.getElementById("myInput2").value;
+  document.getElementById("result2").innerHTML = x / y;
+}
+</script>
